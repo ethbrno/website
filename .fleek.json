@@ -1,0 +1,14 @@
+{
+  "site": {
+    "id": "6dbf6f6b-e8b4-4936-81c4-ff31838c7fc8",
+    "team": "vorcigernix-team",
+    "platform": "ipfs",
+    "source": "ipfs",
+    "name": "super-moon-9230"
+  },
+  "build": {
+    "baseDir": "",
+    "publicDir": "dist",
+    "rootDir": ""
+  }
+}
