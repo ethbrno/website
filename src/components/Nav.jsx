@@ -1,12 +1,12 @@
 export const Nav = () => {
     return (
-        <header class="header bg-white p-2 w-full sticky top-0 container mx-auto">
+        <header class="header bg-white w-full sticky top-0 container mx-auto h-36">
 
-            <a href="/" class="inline-block ml-3"><img src="logo_key.svg" alt="logotype" class="rounded-full bg-black w-12 h-12 m-2" /></a>
+            <a href="/" class="inline-block ml-3"><img src="logo3.png" alt="logotype" class="rounded-full bg-black w-16 h-16 ml-5 mt-10" /></a>
 
             <input class="side-menu" type="checkbox" id="side-menu" />
-            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <nav class="nav">
+            <label class="hamb" for="side-menu"><span class="hamb-line mt-6"></span></label>
+            <nav class="nav mt-6 mr-4">
                 <ul class="menu">
                     <li><a href="/" class="block hover:underline">Home</a></li>
                     <li><a href="/manifesto" class="block hover:underline">Manifesto</a> </li>

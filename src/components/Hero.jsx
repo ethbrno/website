@@ -13,7 +13,7 @@ export const Hero = () => {
                 <p class="text-xl">Brno, Czech republic
                 </p>
                 <div class="h-[1px] bg-white w-full my-2 opacity-20"></div>
-                <p class="mb-8 leading-relaxed serif opacity-50 text-lg">#freedom #anonymity #non-kyc #encryption
+                <p class="mb-8 py-4 leading-relaxed opacity-50 text-lg">#freedom #anonymity #non-kyc #encryption
                     #selfsovereignty #p2p
                     #opensource #web3 #smartcontracts #audits #vulnerabilities #analytics #wallets #scams
                     #darkforest
