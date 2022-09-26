@@ -2,7 +2,7 @@ export const Manifesto = () => {
     return (
         <section class="text-gray-400 bg-black body-font">
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 flex justify-center">
                     <img class="object-cover object-center" alt="hero" src="lock.png"/>
                 </div>
                 <div

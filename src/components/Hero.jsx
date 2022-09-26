@@ -1,7 +1,7 @@
 export const Hero = () => {
     return (<section class="text-gray-400 bg-black">
         <div class="w-full mx-auto flex md:flex-row flex-col items-center">
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 flex justify-center">
                 <img class="object-cover object-center" alt="hero" src="cam2.png" />
             </div>
             <div
