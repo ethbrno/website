@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /manifesto
+Sitemap: https://ethbrno.pages.dev/sitemap.xml
