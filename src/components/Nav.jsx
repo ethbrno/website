@@ -1,6 +1,6 @@
 export const Nav = () => {
     return (
-        <header class="header bg-white w-full sticky top-0 container mx-auto h-36">
+        <header class="header bg-white w-full sticky top-0 container mx-auto h-24">
 
             <a href="/" class="inline-block ml-3"><img src="logo3.png" alt="logotype" class="rounded-full bg-black w-16 h-16 ml-5 mt-10" /></a>
 
