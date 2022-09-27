@@ -3,7 +3,7 @@ export const Footer = () => {
         <div class="px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col lg:pl-32 md:pl-16">
             <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                    <img src="logo_key.svg" alt="logo" class="h-10 bg-gray-800 p-2" />
+                    <img src="logo_key.svg" alt="logo" class="h-12 w-12 bg-gray-800 p-2" />
                 </a>
                 <p class="mt-2 text-sm text-gray-500">ETHBrno is an officially recognized Ethereum Foundation event.</p>
             </div>
