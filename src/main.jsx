@@ -1,7 +1,7 @@
 import { render } from 'preact'
 import { App } from './app'
-import { Nav } from '../src/components/Nav'
+import { Navbar } from '../src/components/Nav2'
 import { Footer } from '../src/components/Footer'
 import './styles.css'
 
-render(<><Nav /><App /><Footer /></>, document.getElementById('app'))
+render(<><Navbar /><App /><Footer /></>, document.getElementById('app'))

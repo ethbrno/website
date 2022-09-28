@@ -1,10 +1,14 @@
+import { useState } from 'preact/hooks'
+
 export const Nav = () => {
+
+    const [burgerOpen, setBurgerOpen] = useState(false)
     return (
         <header class="header bg-white w-full sticky top-0 container mx-auto">
 
             <a href="/" class="inline-block ml-3"><img src="logo3.png" alt="logotype" class="rounded-full bg-black w-16 h-16 ml-5 mt-4" /></a>
 
-            <input class="side-menu" type="checkbox" id="side-menu" />
+            <input class="side-menu" type="checkbox" id="side-menu" role="button" aria-label="Display the menu" aria-expanded="false" aria-controls="menu" />
             <label class="hamb" for="side-menu"><span class="hamb-line mt-2"></span></label>
             <nav class="nav mr-4 flex flex-col">
                 <ul class="menu">
