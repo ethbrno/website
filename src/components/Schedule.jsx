@@ -14,7 +14,7 @@ function getDayTimeParams(datefrom, dateto) {
 function isNear(date) {
     const _date = parseISO(date)
     const _now = new Date()
-    console.log(_date, _now)
+    //console.log(_date, _now)
     return (differenceInHours(_date, _now) <= 3)
 
 }
@@ -31,7 +31,7 @@ export const Schedule = () => {
     //console.log(highlights);
     return (
         <>
-            {highlights.length > 0(
+            {highlights.length > 0 &&(
                 <section class="text-gray-400 bg-black body-font overflow-hidden">
                     <div class="px-5 py-24">
                         <h1 class="md:text-5xl text-3xl mb-4 font-bold text-white">Highlights</h1>
