@@ -3,6 +3,7 @@ import AsyncRoute from 'preact-async-route';
 import { HomePage } from "../src/home"
 import { ManifestoPage } from "../src/manifesto"
 import { ManualPage } from "../src/manual"
+import { SchedulePage } from "../src/schedule"
 
 
 export function App() {
@@ -18,6 +19,10 @@ export function App() {
         <AsyncRoute
           path="/manual"
           component={ManualPage}
+        />
+        <AsyncRoute
+          path="/schedule"
+          component={SchedulePage}
         />
       </Router>
     </main>

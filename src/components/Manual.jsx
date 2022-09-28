@@ -124,7 +124,7 @@ export const Manual = () => {
                     </div>
                 </div>
                 <article class="lg:flex-grow md:w-1/2 lg:pl-32 md:pl-16 lg:pr-32 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h1 class="text-5xl mb-4 font-bold text-white">
+                    <h1 class="md:text-5xl text-3xl mb-4 font-bold text-white">
                         Hacker Manual
                     </h1>
                     <h2 class="text-2xl py-4 text-white">In a nutshell:</h2>

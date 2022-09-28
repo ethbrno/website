@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "date-fns": "^2.29.3",
     "preact": "^10.10.6",
     "preact-async-route": "^2.2.1",
     "preact-router": "^4.1.0"

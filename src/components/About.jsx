@@ -4,7 +4,7 @@ export const About = () => {
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pl-32 md:pl-16 lg:pr-32 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 class="text-5xl font-bold mb-4 text-gray-900">About </h1>
+                    <h1 class="md:text-5xl text-3xl font-bold mb-4 text-gray-900">About </h1>
 
                     <p class="mb-8 leading-relaxed">ETHBrno is an annual independent {`&`} open community hackathon (former conference) for supporters of decentralised finance, smart contracts and Web3 happening in Brno, Czech Republic. ETHBrno² is the second, and we believe the best yet, edition.</p>
 

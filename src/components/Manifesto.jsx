@@ -7,7 +7,7 @@ export const Manifesto = () => {
                 </div>
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pl-32 md:pl-16 lg:pr-32 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h1 class="text-5xl mb-4 font-bold text-white">Manifesto
+                    <h1 class="md:text-5xl text-3xl mb-4 font-bold text-white">Manifesto
 
                     </h1>
                     <p class="mb-4 leading-relaxed">We believe that privacy is a fundamental human right. And good
