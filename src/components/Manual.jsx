@@ -129,9 +129,9 @@ export const Manual = () => {
                     </h1>
                     <h2 class="text-2xl py-4 text-white">In a nutshell:</h2>
                     <ul>
-                        <li class="mb-4 leading-relaxed">Join our Discord</li>
-                        <li class="mb-4 leading-relaxed">
-                            Find a team, Idea or Bounty on Dework
+                        <li class="mb-4 leading-relaxed hover:underline hover:text-white"><a href="https://discord.com/invite/qTCka7qtPZ">Join our Discord</a></li>
+                        <li class="mb-4 leading-relaxed hover:underline hover:text-white"><a href="https://dework.ethbrno.cz/">
+                            Find a team, Idea or Bounty on Dework</a>
                         </li>
 
                         <li class="leading-relaxed">

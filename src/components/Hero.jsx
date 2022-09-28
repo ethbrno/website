@@ -6,7 +6,7 @@ export const Hero = () => {
             </div>
             <div
                 class="lg:flex-grow md:w-1/2 lg:pl-32 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center text-white transition-transform">
-                <img src="logo.svg" class="-ml-4" alt="logo" />
+                <img src="logo.svg" class="md:-ml-4 p-2 md:p-0  w-[343px] h-[127px]" alt="logo" />
                 <p class="text-3xl my-2">privacy {`&`} security edition</p>
                 <p class="text-xl">NOVEMBER 11-13, 2022
                 </p>
