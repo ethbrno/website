@@ -1,13 +1,17 @@
 import Router from 'preact-router';
 import AsyncRoute from 'preact-async-route';
-import { HomePage } from "../src/home"
-import { ManifestoPage } from "../src/manifesto"
-import { ManualPage } from "../src/manual"
-import { SchedulePage } from "../src/schedule"
+import { HomePage } from "../src/home";
+import { ManifestoPage } from "../src/manifesto";
+import { ManualPage } from "../src/manual";
+import { SchedulePage } from "../src/schedule";
+import fetch from "../src/lib/fetch";
+import { useQuery } from "react-query";
 
+export const useBundle = () => useQuery(["bundle"], () =>
+  fetch("https://spec.utxo.cz/22/bundle.json")
+);
 
 export function App() {
-
   return (
     <main class="container mx-auto">
       <Router>
@@ -26,5 +30,5 @@ export function App() {
         />
       </Router>
     </main>
-  )
+  );
 }

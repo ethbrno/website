@@ -6,9 +6,9 @@ export const About = () => {
                     class="lg:flex-grow md:w-1/2 lg:pl-32 md:pl-16 lg:pr-32 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 class="md:text-5xl text-3xl font-bold mb-4 text-gray-900">About </h1>
 
-                    <p class="mb-8 leading-relaxed">ETHBrno is an annual independent {`&`} open community hackathon (former conference) for supporters of decentralised finance, smart contracts and Web3 happening in Brno, Czech Republic. ETHBrno² is the second, and we believe the best yet, edition.</p>
+                    <p class="mb-8 leading-relaxed">ETHBrno² is an annual independent {`&`} open community hackathon (former conference) for supporters of decentralised finance, smart contracts and Web3 happening in Brno, Czech Republic. ETHBrno²² is the second, and we believe the best yet, edition.</p>
 
-                    <p class="mb-8 leading-relaxed">ETHBrno events are organized by Gwei.cz community with the help of the UTXO Foundation.</p>
+                    <p class="mb-8 leading-relaxed">ETHBrno² events are organized by Gwei.cz community with the help of the UTXO Foundation.</p>
 
                     <p class="mb-8 leading-relaxed">This year we are focusing on privacy and security topics.</p>
 
