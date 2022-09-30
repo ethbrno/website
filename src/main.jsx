@@ -1,6 +1,6 @@
 import { render } from "preact";
 import { App } from "./app";
-import { Navbar } from "../src/components/Nav2";
+import { Navbar } from "../src/components/Nav";
 import { Footer } from "../src/components/Footer";
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./styles.css";

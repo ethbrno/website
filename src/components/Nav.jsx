@@ -1,27 +1,52 @@
-import { useState } from 'preact/hooks'
+import { useState } from 'preact/hooks';
 
-export const Nav = () => {
-
-    const [burgerOpen, setBurgerOpen] = useState(false)
+export const Navbar = ({ fixed }) => {
+    const [navbarOpen, setNavbarOpen] = useState(false);
     return (
-        <header class="header bg-white w-full sticky top-0 container mx-auto">
+        <>
+            <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white container mx-auto">
+                <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
 
-            <a href="/" class="inline-block ml-3"><img src="logo3.png" alt="logotype" class="rounded-full bg-black w-16 h-16 ml-5 mt-4" /></a>
+                    <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                        <a
+                            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-900"
+                            href="/"
+                        >
+                            <img src="logo.svg" alt="logo" class="h-12 w-24 bg-gray-800 p-2" />
 
-            <input class="side-menu" type="checkbox" id="side-menu" role="button" aria-label="Display the menu" aria-expanded="false" aria-controls="menu" />
-            <label class="hamb" for="side-menu"><span class="hamb-line mt-2"></span></label>
-            <nav class="nav mr-4 flex flex-col">
-                <ul class="menu">
-                    <li><a href="/" class="block hover:underline">Home</a></li>
-                    <li><a href="/manifesto" class="block hover:underline">Manifesto</a> </li>
-                    <li><a href="/manual" class="block hover:underline">Hacker Manual</a></li>
-                    <li><a href="/schedule" class="block hover:underline">Schedule</a></li>
-                    <li><a href="/venues" class="block hover:underline">Venues</a></li>
-                    <li><a href="/contributors" class="block hover:underline">Contributors</a></li>
-                    <li><a href="/team" class="block hover:underline">Team</a></li>
-                </ul>
-                <span class="text-xs text-end mr-4">NOVEMBER 11-13, 2022 @ BRNO, CZECH REPUBLIC</span>
+                            <div class="text-xs" >November 11-13</div>
+                            <div class="text-xs">Brno</div>
+                        </a>
+                        <button
+                            class="text-gray-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                            type="button"
+                            onClick={() => setNavbarOpen(!navbarOpen)}
+                        >
+                            ☰
+                        </button>
+
+                    </div>
+                    <div
+
+                        class={
+                            "lg:flex flex-grow items-center" +
+                            (navbarOpen ? " flex" : " hidden")
+                        }
+                        id="navbar"
+                    >
+                        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+
+                            <li><a href="https://join.ethbrno.cz" target="_blank" class="p-5 flex items-center bg-gray-100  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline">Join</a></li>
+                            <li><a href="/" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline">Home</a></li>
+                            <li><a href="/manual" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline">Hacker Manual</a></li>
+                            <li><a href="/schedule" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline">Schedule</a></li>
+                            <li><a href="/venues" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline">Venues</a></li>
+                            <li><a href="/contributors" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline">Contributors</a></li>
+                        </ul>
+
+                    </div>
+                </div>
             </nav>
-        </header>
-    )
-}
+        </>
+    );
+};
