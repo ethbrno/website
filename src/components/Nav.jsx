@@ -10,7 +10,7 @@ export const Navbar = ({ fixed }) => {
 
                     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
-                            class="text-sm leading-relaxed inline-block mr-4 p-4 whitespace-nowrap uppercase bg-gray-900 text-white"
+                            class="text-sm leading-relaxed inline-block mr-4 p-4 whitespace-nowrap uppercase bg-black text-white"
                             href="/"
                         >
                             <img src="logo.svg" alt="logo" class="h-12 w-24 p-2 -ml-3" />
