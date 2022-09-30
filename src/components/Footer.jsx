@@ -48,7 +48,7 @@ export const Footer = () => {
                 </div>
             </div>
         </div>
-        <div class="bg-gray-100">
+        <div>
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                 <p class="text-gray-500 text-sm text-center sm:text-left">2022 ETHBrno² —
                     <a href="https://twitter.com/ethbrno" rel="noopener noreferrer" class="text-gray-500 ml-1" target="_blank">@ethbrno</a>
