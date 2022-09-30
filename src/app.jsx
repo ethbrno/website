@@ -5,6 +5,8 @@ import { ManifestoPage } from "../src/manifesto";
 import { ManualPage } from "../src/manual";
 import { SchedulePage } from "../src/schedule";
 import { VenuesPage } from "../src/venues";
+import { ContributorsPage } from "../src/contributors";
+
 import fetch from "../src/lib/fetch";
 import { useQuery } from "react-query";
 
@@ -32,6 +34,10 @@ export function App() {
         <AsyncRoute
           path="/venues"
           component={VenuesPage}
+        />
+        <AsyncRoute
+          path="/contributors"
+          component={ContributorsPage}
         />
       </Router>
     </main>

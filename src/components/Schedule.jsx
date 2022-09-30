@@ -7,7 +7,7 @@ export const Schedule = () => {
     const [filter, setFilter] = useState([-2, -1, 0, 1, 2, 3]);
     if (isLoading) return "Loading...";
     if (error) return "An error has occurred: " + error.message;
-    console.log(data);
+    //console.log(data);
 
     if (!data) {
         return (
