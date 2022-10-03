@@ -1,0 +1,36 @@
+name: CI 
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3.3.0
+        with:
+          go-version: '1.19'
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      
+      - run: yarn
+      - run: yarn build
+
+      # Pin the built site to ipfs-cluster, output the cid as `steps.ipfs.outputs.cid`
+      # see: https://github.com/ipfs-shipyard/ipfs-github-action
+      - uses: ipfs-shipyard/ipfs-github-action@v1.0.0
+        id: ipfs
+        with:
+          path_to_add: public
+          cluster_host: /dnsaddr/cluster.ipfs.io
+          cluster_user: ${{ secrets.CLUSTER_USER }}
+          cluster_password: ${{ secrets.CLUSTER_PASSWORD }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - run: echo /ipfs/${{ steps.ipfs.outputs.cid }}
+
+      - run: echo ${{ github.ref }}
