@@ -25,7 +25,7 @@ jobs:
         id: ipfs
         with:
           path_to_add: dist
-          cluster_host: /ipfs-api.gwei.cz/tcp/5001
+          cluster_host: /dns4/ipfs-api.gwei.cz/tcp/5001
           cluster_user: ${{ secrets.CLUSTER_USER }}
           cluster_password: ${{ secrets.CLUSTER_PASSWORD }}
         env:
