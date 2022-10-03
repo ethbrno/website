@@ -21,11 +21,11 @@ jobs:
 
       # Pin the built site to ipfs-cluster, output the cid as `steps.ipfs.outputs.cid`
       # see: https://github.com/ipfs-shipyard/ipfs-github-action
-      - uses: ipfs-shipyard/ipfs-github-action@v1.0.0
+      - uses: ipfs-shipyard/ipfs-github-action@v2
         id: ipfs
         with:
-          path_to_add: public
-          cluster_host: /dnsaddr/cluster.ipfs.io
+          path_to_add: dist
+          cluster_host: /ip4/ipfs-api.gwei.cz/tcp/5001
           cluster_user: ${{ secrets.CLUSTER_USER }}
           cluster_password: ${{ secrets.CLUSTER_PASSWORD }}
         env:
