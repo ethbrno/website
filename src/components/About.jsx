@@ -14,10 +14,10 @@ export const About = () => {
 
                     <div class="flex justify-center">
                         <a href="https://join.ethbrno.cz/"
-                            class="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700  text-lg">Apply
+                            class="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-900  text-lg">Apply
                             To Hack</a>
                         <a href="https://ethbrno.cz/sponsor-deck.pdf" target="_blank" rel="noopener noreferrer"
-                            class="ml-4 inline-flex text-gray-700 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-gray-200  text-lg underline">Sponsor</a>
+                            class="ml-4 inline-flex text-gray-900 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-gray-200  text-lg underline">Sponsor</a>
                     </div>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

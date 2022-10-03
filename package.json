@@ -11,11 +11,14 @@
     "deploy": "yarn build && arweave deploy-dir dist --key-file arwallet.json"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "date-fns": "^2.29.3",
     "preact": "^10.10.6",
     "preact-async-route": "^2.2.1",
     "preact-router": "^4.1.0",
-    "react-query": "^3.39.2"
+    "react-query": "^3.39.2",
+    "snarkdown": "^2.0.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.3.0",

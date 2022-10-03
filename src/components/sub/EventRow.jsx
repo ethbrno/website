@@ -1,19 +1,9 @@
 import { useRef, useEffect } from "preact/hooks";
-import { parseISO, format, differenceInHours, formatDistanceToNow, differenceInDays } from 'date-fns';
+import { parseISO, differenceInHours } from 'date-fns';
 import { Speaker } from "./Speaker";
 import { useBundle } from "../../app";
+import { getDayTimeParams } from '../../lib/getDayTimeParams';
 
-
-function getDayTimeParams(datefrom, dateto) {
-    const _date = parseISO(datefrom);
-    const _date2 = parseISO(dateto);
-    const date = formatDistanceToNow(_date, { addSuffix: true });
-    const time = format(_date, "haaa");
-    const current = (_date < new Date() < _date2);
-    const dayDifferenceNum = Math.ceil(differenceInDays(_date, new Date()));
-    return [date, time, current, dayDifferenceNum];
-
-}
 
 const itemOpacity = (start) => {
     const _start = parseISO(start);
@@ -56,7 +46,7 @@ export const EventRow = ({ item, eventdetail, filter }) => {
     }, []);
 
     return (
-        <div class={` divide-y-2 divide-gray-800 opacity-${itemOpacity(item.period.start)}`} id={item.id} key={item.id}>
+        <div class={` divide-y-2 divide-gray-900 opacity-${itemOpacity(item.period.start)}`} id={item.id} key={item.id}>
             {isCurrent ? (<span ref={myRef}></span>) : (<span></span>)}
             <div class="py-10 flex flex-wrap md:flex-nowrap">
                 <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
