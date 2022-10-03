@@ -13,13 +13,13 @@ export const SpeakerEvents = ({ speaker }) => {
     const { spec: { events } } = data;
     const thisSpeakerEvents = events.filter((item) => item.speakers.includes(speaker));
 
-    console.log(thisSpeakerEvents);
+    //console.log(thisSpeakerEvents);
     if (!thisSpeakerEvents) return <h2 class="text-2xl font-medium text-white title-font mb-2">No Events</h2>;
 
     return (
         <div>
             {thisSpeakerEvents.map((i) => (
-                <div class="pb-8 flex border-t-2 border-gray-900 flex-wrap ">
+                <div class="pb-8 flex border-t-2 border-gray-900 flex-col ">
                     <div class="md:w-64 mb-6 flex-shrink-0 flex flex-col">
                         <EventTime id={i.id} />
                     </div>

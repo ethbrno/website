@@ -39,7 +39,7 @@ export const Contributors = () => {
                         onClose={() => setIsOpen(false)}
                         className="relative z-50"
                     >
-                        <div className="fixed inset-0 flex items-center justify-center p-4">
+                        <div className="fixed inset-0 flex items-center justify-center md:p-4">
                             <Dialog.Panel className="w-full md:w-2/3 bg-black  md:bg-gray-900/90 h-full md:h-4/5 overflow-y-scroll">
                                 <Dialog.Title class="sr-only">{memberDetail.name}</Dialog.Title>
                                 <button
