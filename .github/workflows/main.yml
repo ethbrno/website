@@ -1,0 +1,34 @@
+name: CI 
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3.3.0
+        with:
+          go-version: '1.19'
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      
+      - run: yarn
+      - run: yarn build
+
+      # Pin the built site to web3.storage
+
+      - uses: web3-storage/add-to-web3@v2.1.0
+        id: ipfs
+        with:
+          path_to_add: dist
+          web3_token: ${{ secrets.WEB3_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Output CID
+      - run: echo ${{ steps.web3.outputs.cid }}
+      # Output URL
+      - run: echo ${{ steps.web3.outputs.url }}
