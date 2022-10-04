@@ -40,7 +40,7 @@ export const Contributors = () => {
                         className="relative z-50"
                     >
                         <div className="fixed inset-0 flex items-center justify-center md:p-4">
-                            <Dialog.Panel className="w-full md:w-2/3 bg-black  md:bg-gray-900/90 h-full md:h-4/5 overflow-y-scroll">
+                            <Dialog.Panel className="w-full md:w-2/3 bg-black  md:bg-black/90 h-full md:h-4/5 overflow-y-scroll">
                                 <Dialog.Title class="sr-only">{memberDetail.name}</Dialog.Title>
                                 <button
                                     class="relative left-0 top-0 pl-4 pt-4 text-white inline-flex items-center"
@@ -101,7 +101,7 @@ export const Contributors = () => {
                                         </div>
                                     </div>
                                     <div class="xl:w-2/3 md:w-1/2 w-full p-4 h-2/3 overflow-y-scroll ">
-                                        <div class="bg-gray-900 text-white p-6 h-full">
+                                        <div class="bg-black text-white p-6 h-full">
                                             {memberDetail.desc && (
                                                 <>
                                                     <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">About</h2>
@@ -132,15 +132,15 @@ export const Contributors = () => {
                     <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">Speakers</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are here to inspire and help your project succeed.</p>
-                        <div class="flex mx-auto border-2 border-gray-800 overflow-hidden mt-6 bg-gray-800">
+                        <div class="flex mx-auto border-2 border-black overflow-hidden mt-6 bg-black">
                             <a class="py-1 px-4  text-white focus:outline-none">Speakers</a>
-                            <a class="py-1 px-4 bg-black hover:bg-gray-800 text-gray-300 focus:outline-none" href="/team">Team</a>
+                            <a class="py-1 px-4 bg-black hover:bg-black text-gray-300 focus:outline-none" href="/team">Team</a>
                         </div>
                     </div>
                     <div class="flex flex-wrap -m-4">
                         {speakers.map((member, index) => (
                             <div class="xl:w-1/4 md:w-1/2 w-full p-4">
-                                <div class="bg-gray-900 bg-opacity-40 p-6 h-full">
+                                <div class="bg-black bg-opacity-40 p-6 h-full">
                                     <img
                                         class="h-40  w-full object-cover object-center mb-6 clippic"
                                         loading="lazy"

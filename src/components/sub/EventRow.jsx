@@ -46,7 +46,7 @@ export const EventRow = ({ item, eventdetail, filter }) => {
     }, []);
 
     return (
-        <div class={` divide-y-2 divide-gray-900 opacity-${itemOpacity(item.period.start)}`} id={item.id} key={item.id}>
+        <div class={` divide-y-2 divide-black opacity-${itemOpacity(item.period.start)}`} id={item.id} key={item.id}>
             {isCurrent ? (<span ref={myRef}></span>) : (<span></span>)}
             <div class="py-10 flex flex-wrap md:flex-nowrap">
                 <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
@@ -58,7 +58,7 @@ export const EventRow = ({ item, eventdetail, filter }) => {
                     <h2 class="text-2xl font-medium text-white title-font mb-2">{eventdetail.name}</h2>
                     <div class="flex gap-2">{eventdetail.speakers.map((speaker) => (<Speaker speaker={speakerDetail(speaker)[0]} />))}</div>
                     <div class="text-gray-400 inline-flex items-center mt-4">
-                        {eventdetail.tags.map((tag) => (<span class="px-3 py-1 bg-gray-900 rounded-full text-xs m-2">{tag}</span>))}
+                        {eventdetail.tags.map((tag) => (<span class="px-3 py-1 bg-black rounded-full text-xs m-2">{tag}</span>))}
                     </div>
                 </div>
             </div>

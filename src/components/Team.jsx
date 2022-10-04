@@ -19,15 +19,15 @@ export const Team = () => {
                     <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">Team</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are here to inspire and help your project succeed.</p>
-                        <div class="flex mx-auto border-2 border-gray-800 overflow-hidden mt-6 bg-gray-800">
-                            <a class="py-1 px-4 bg-black hover:bg-gray-800 text-gray-300 focus:outline-none" href="/contributors">Speakers</a>
+                        <div class="flex mx-auto border-2 border-black overflow-hidden mt-6 bg-black">
+                            <a class="py-1 px-4 bg-black hover:bg-black text-gray-300 focus:outline-none" href="/contributors">Speakers</a>
                             <a class="py-1 px-4   text-white focus:outline-none">Team</a>
                         </div>
                     </div>
                     <div class="flex flex-wrap -m-4">
                         {Object.values(persons).map((member, index) => (
                             <div class="xl:w-1/4 md:w-1/2 w-full p-4">
-                                <div class="bg-gray-900 bg-opacity-40 p-6 h-full">
+                                <div class="bg-black bg-opacity-40 p-6 h-full">
                                     {member.photos && (
                                         <img
                                             class="h-40  w-full object-cover object-center mb-6 clippic"

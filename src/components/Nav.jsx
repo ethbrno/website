@@ -10,16 +10,13 @@ export const Navbar = ({ fixed }) => {
 
                     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
-                            class="text-sm leading-relaxed inline-block mr-4 p-4 whitespace-nowrap uppercase bg-black text-white"
+                            class="text-sm leading-relaxed inline-block mr-4 p-4 whitespace-nowrap uppercase underline bg-black"
                             href="/"
                         >
                             <img src="logo.svg" alt="logo" class="h-12 w-24 p-2 -ml-3" />
-
-                            <div class="text-xs " >November 11-13</div>
-                            <div class="text-xs ">Brno</div>
                         </a>
                         <button
-                            class="text-gray-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                            class="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
@@ -36,12 +33,12 @@ export const Navbar = ({ fixed }) => {
                         id="navbar"
                     >
                         <ul class="flex flex-col lg:flex-row lg:flex-grow-0 lg:mt-0 list-none lg:ml-auto flex-grow mt-8">
-                            <li><Link activeClassName="bg-black text-white" href="https://join.ethbrno.cz" target="_blank" class="p-5 flex items-center bg-gray-100  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline">Join</Link></li>
-                            <li><Link activeClassName="bg-black text-white" href="/" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Home</Link></li>
-                            <li><Link activeClassName="bg-black text-white" href="/manual" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Hacker Manual</Link></li>
-                            <li><Link activeClassName="bg-black text-white" href="/schedule" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Schedule</Link></li>
-                            <li><Link activeClassName="bg-black text-white" href="/venues" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Venues</Link></li>
-                            <li><Link activeClassName="bg-black text-white" href="/contributors" class="p-5 flex items-center  uppercase font-bold leading-snug text-gray-900 hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Contributors</Link></li>
+                            <li><Link activeClassName="underline" href="/" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Home</Link></li>
+                            <li><Link activeClassName="underline" href="/manual" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline hidden" onClick={() => setNavbarOpen(false)}>Hacker Manual</Link></li>
+                            <li><Link activeClassName="underline" href="/schedule" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline hidden" onClick={() => setNavbarOpen(false)}>Schedule</Link></li>
+                            <li><Link activeClassName="underline" href="/venues" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Venues</Link></li>
+                            <li><Link activeClassName="underline" href="/contributors" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Contributors</Link></li>
+                            <li><Link activeClassName="underline" href="https://join.ethbrno.cz" rel="noopener noreferrer" target="_blank" class="p-5 flex items-center bg-black text-white  uppercase font-bold leading-snug hover:opacity-75 hover:underline">Join</Link></li>
                         </ul>
 
                     </div>

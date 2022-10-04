@@ -37,19 +37,19 @@ export const Schedule = () => {
                             Schedule
                         </h1>
                         <button
-                            class="flex-shrink-0 text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600  mt-10 sm:mt-0 mr-2"
-                            onclick={() => setFilter([-118, -117, -116])}
+                            class="flex-shrink-0 text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-600  mt-10 sm:mt-0 mr-2"
+                            onclick={() => setFilter([-121, -120, -119])}
                         >
                             All
                         </button>
                         <button
-                            class="flex-shrink-0 text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600  mt-10 sm:mt-0 mr-2"
+                            class="flex-shrink-0 text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-600  mt-10 sm:mt-0 mr-2"
                             onclick={() => setFilter([-118])}
                         >
                             Today
                         </button>
                         <button
-                            class="flex-shrink-0 text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600  mt-10 sm:mt-0"
+                            class="flex-shrink-0 text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-600  mt-10 sm:mt-0"
                             onclick={() => setFilter([-116])}
                         >
                             Tomorrow

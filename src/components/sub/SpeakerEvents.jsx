@@ -19,7 +19,7 @@ export const SpeakerEvents = ({ speaker }) => {
     return (
         <div>
             {thisSpeakerEvents.map((i) => (
-                <div class="pb-8 flex border-t-2 border-gray-900 flex-col ">
+                <div class="pb-8 flex border-t-2 border-black flex-col ">
                     <div class="md:w-64 mb-6 flex-shrink-0 flex flex-col">
                         <EventTime id={i.id} />
                     </div>
@@ -29,7 +29,7 @@ export const SpeakerEvents = ({ speaker }) => {
                             i.description,
                         )}></p>
                         <div class=" text-sm inline-flex items-center mt-4">
-                            <span class="text-gray-100 bg-gray-800 p-2">{i.difficulty}&nbsp;{i.type}</span>
+                            <span class="text-gray-100 bg-black p-2">{i.difficulty}&nbsp;{i.type}</span>
                             {i.tags.map((tag)=><span class="ml-2 text-gray-400">.{tag}</span>)}
                         </div>
                     </div>
