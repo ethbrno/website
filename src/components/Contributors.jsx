@@ -139,10 +139,12 @@ export const Contributors = () => {
                     </div>
                     <div class="flex flex-wrap -m-4">
                         {speakers.map((member, index) => (
-                            <div class="xl:w-1/4 md:w-1/2 w-full p-4">
+                            <button class="xl:w-1/4 md:w-1/2 w-full p-4" onClick={() => {
+                                openMember(member);
+                            }}>
                                 <div class="bg-black bg-opacity-40 p-6 h-full">
                                     <img
-                                        class="h-40  w-full object-cover object-center mb-6 clippic"
+                                        class="h-40  w-full object-cover object-center mb-6 clippic grayscale hover:grayscale-0"
                                         loading="lazy"
                                         src={`https://spec.utxo.cz/22/photos/speakers/${member.id}-${member.photos[0].split(":")[0]
                                             }.${member.photos[0].split(":")[1]}`}
@@ -158,11 +160,9 @@ export const Contributors = () => {
                                         <h2 class="text-lg text-white font-medium title-font">
                                             {member.name}
                                         </h2>
-                                        <button
+                                        <a
                                             class="text-gray-100"
-                                            onClick={() => {
-                                                openMember(member);
-                                            }}
+
                                         >
                                             <svg
                                                 class="w-4 h-4 ml-2"
@@ -176,7 +176,7 @@ export const Contributors = () => {
                                                 <path d="M5 12h14"></path>
                                                 <path d="M12 5l7 7-7 7"></path>
                                             </svg>
-                                        </button>
+                                        </a>
                                     </div>
 
                                     {member.orgs && (
@@ -186,7 +186,7 @@ export const Contributors = () => {
                                         />
                                     )}
                                 </div>
-                            </div>
+                            </button>
                         ))}
                     </div>
                 </div>

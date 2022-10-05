@@ -17,7 +17,7 @@ export const useBundle = () => useQuery(["bundle"], () =>
 
 export function App() {
   return (
-    <main class="container mx-auto">
+    <main>
       <Router>
         <HomePage path="/" />
         <AsyncRoute
