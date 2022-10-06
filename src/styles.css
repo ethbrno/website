@@ -21,3 +21,30 @@ body {
 .clippic {
     clip-path: polygon(85% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 0%);
 }
+
+@keyframes letterspacing {
+    0% {
+        letter-spacing: -5rem;
+        filter: blur(0.5rem);
+    }
+
+    50% {
+        filter: blur(0.0rem);
+    }
+
+    100% {
+        letter-spacing: 1rem;
+        filter: blur(1.5rem);
+    }
+}
+
+.anim {
+    color: white;
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    filter: blur(0.5rem);
+    animation: letterspacing 10s infinite alternate cubic-bezier(.2, 0, 0, 1);
+
+}

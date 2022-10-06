@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (<footer class="text-gray-100 bg-black mx-auto">
         <div class="pt-12">
-            <img src="cityscape.png" class="object-cover w-full" />
+            <img src="cityscape2.png" class="object-cover w-full" />
         </div>
         <div class="bg-white">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
