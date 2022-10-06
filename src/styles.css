@@ -50,7 +50,7 @@ body {
 }
 
 .animhue {
-    animation: hue 3s infinite;
+    animation: hue 10s infinite;
 }
 
 @keyframes hue {
@@ -61,6 +61,6 @@ body {
     }
 
     50% {
-        filter: hue-rotate(180deg);
+        filter: hue-rotate(180deg) blur(0.5rem);
     }
 }
