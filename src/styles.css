@@ -48,19 +48,3 @@ body {
     animation: letterspacing 10s infinite alternate cubic-bezier(.2, 0, 0, 1);
 
 }
-
-.animhue {
-    animation: hue 10s infinite;
-}
-
-@keyframes hue {
-
-    0%,
-    100% {
-        filter: hue-rotate(0deg);
-    }
-
-    50% {
-        filter: hue-rotate(180deg) blur(0.5rem);
-    }
-}
