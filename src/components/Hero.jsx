@@ -2,7 +2,7 @@ export const Hero = () => {
     return (<section class="text-gray-400 bg-black">
         <div class="w-full mx-auto flex md:flex-row md:h-5/6 flex-col items-center">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 md:mb-0 mb-10 md:flex hidden justify-center">
-                <img class="object-cover object-center animhue" alt="hero" src="https://images.unsplash.com/photo-1530151928300-3864d0e5d178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+                <img class="object-cover object-center animhue" alt="hero" src="https://images.unsplash.com/photo-1492201789320-a16a060174d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
             </div>
             <div
                 class="lg:flex-grow md:w-1/2 lg:pl-32 md:pl-16 pt-4 flex flex-col md:items-start md:text-left items-center text-center text-white transition-transform">
