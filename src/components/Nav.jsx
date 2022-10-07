@@ -5,7 +5,7 @@ export const Navbar = ({ fixed }) => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     return (
         <>
-            <nav class="flex flex-wrap items-center justify-between px-4 bg-white mx-auto sticky top-0">
+            <nav class="flex flex-wrap items-center justify-between px-4 bg-white mx-auto sticky top-0 z-50">
                 <div class="container mx-auto flex flex-wrap items-center justify-between">
 
                     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
