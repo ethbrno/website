@@ -38,8 +38,8 @@ export const Navbar = ({ fixed }) => {
                             <li><Link activeClassName="underline" href="/schedule" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline hidden" onClick={() => setNavbarOpen(false)}>Schedule</Link></li>
                             <li><Link activeClassName="underline" href="/venues" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Venues</Link></li>
                             <li><Link activeClassName="underline" href="/contributors" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Contributors</Link></li>
-                            <li><a href="https://join.ethbrno.cz" rel="noopener noreferrer" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline" onClick={() => setNavbarOpen(false)}>Chat</a></li>
-                            <li><a href="https://matrix.to/#/#ethbrno:gwei.cz" rel="noopener noreferrer" target="_blank" class="p-5 flex items-center bg-black text-white uppercase font-bold leading-snug hover:opacity-75 hover:underline">Join</a></li>
+                            <li><a href="https://matrix.to/#/#ethbrno:gwei.cz" rel="noopener noreferrer" class="p-5 flex items-center  uppercase font-bold leading-snug text-black hover:opacity-75 hover:underline">Chat</a></li>
+                            <li><a href="https://join.ethbrno.cz" rel="noopener noreferrer" target="_blank" class="p-5 flex items-center bg-black text-white uppercase font-bold leading-snug hover:opacity-75 hover:underline">Join</a></li>
                         </ul>
 
                     </div>
