@@ -32,9 +32,8 @@ export function App() {
           path="/schedule"
           component={SchedulePage}
         />
-        <AsyncRoute
+        <VenuesPage
           path="/venues"
-          component={VenuesPage}
         />
         <AsyncRoute
           path="/contributors"
